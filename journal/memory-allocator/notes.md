@@ -10,8 +10,12 @@ First I need to figure out what I need to do for this project.
 	2. Make sure everything is efficient, and to standards (do AI code reviews)
 # Memory Theory
 
-# Creating a Library in C
 
+What problem is memory allocation trying to solve?
+
+
+# Creating a Library in C
+``
 
 # Components of Memory Management
 Python actually uses three components for memory management. We have:
