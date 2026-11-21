@@ -11,17 +11,14 @@
             "id": "b391e489c3ebe53a",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "journal/memory-allocator/map.canvas",
-                "viewState": {
-                  "x": 534.4766588284899,
-                  "y": -574.0616960074756,
-                  "zoom": 0.4
-                }
+                "file": "journal/last-thing-done.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "map"
+              "icon": "lucide-file",
+              "title": "last-thing-done"
             }
           },
           {
@@ -196,6 +193,8 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "document-comments:Toggle document comments": false,
+      "document-comments:Open comments sidebar": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -209,9 +208,14 @@
   },
   "active": "b391e489c3ebe53a",
   "lastOpenFiles": [
-    "journal/memory-allocator/journal.md",
+    "journal/memory-allocator/manual-memory-management-issues.md",
+    "journal/last-thing-done.md",
+    "journal/memory-allocator/notes.md",
     "journal/memory-allocator/map.canvas",
-    "journal/memory-allocator/map.canvas",
-    "journal/memory-allocator/notes.md"
+    "Pasted image 20261121080109.png",
+    "journal/memory-allocator/images/Pasted image 20261121080147.png",
+    "journal/memory-allocator/images",
+    "journal/memory-allocator/images/Pasted image 20261121075759.png",
+    "journal/memory-allocator/journal.md"
   ]
 }

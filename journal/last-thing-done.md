@@ -1,0 +1,1 @@
+writing about manual memory management problems, watching https://www.youtube.com/watch?v=fGP6VHxqkIM at 2:25

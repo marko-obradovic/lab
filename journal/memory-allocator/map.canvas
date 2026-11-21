@@ -1,6 +1,8 @@
 {
 	"nodes":[
-		{"id":"ef6c58fd17203591","type":"text","text":"**RAM**","x":-360,"y":-300,"width":100,"height":60},
+		{"id":"5a961d33a4364605","type":"group","x":820,"y":-560,"width":660,"height":560,"label":"CPU"},
+		{"id":"28252d51a4970bfd","type":"group","x":1960,"y":-560,"width":660,"height":560,"label":"RAM"},
+		{"id":"ef6c58fd17203591","type":"text","text":"**RAM**","x":-360,"y":-300,"width":100,"height":60,"color":"2"},
 		{
 			"id":"045636a8821cce18",
 			"type":"text",
@@ -49,7 +51,8 @@
 			"x":460,
 			"y":-300,
 			"width":80,
-			"height":60
+			"height":60,
+			"color":"2"
 		},
 		{
 			"id":"50535c71fbbe9ba8",
@@ -60,27 +63,6 @@
 			"y":-140,
 			"width":260,
 			"height":60
-		},
-		{
-			"id":"43be9f043c643f28",
-			"type":"text",
-			"text":"Registers",
-			"styleAttributes":{},
-			"x":162,
-			"y":-654,
-			"width":116,
-			"height":60,
-			"color":"6"
-		},
-		{
-			"id":"086bb0430c6028b1",
-			"type":"text",
-			"text":"Inside the CPU, there are small, built-in, ultra-fast storage locations that are hold data, instructions, or memory addresses that the computer is actively using / processing",
-			"styleAttributes":{},
-			"x":382,
-			"y":-694,
-			"width":381,
-			"height":140
 		},
 		{
 			"id":"b0e6b60d14766d34",
@@ -94,16 +76,6 @@
 			"color":"6"
 		},
 		{
-			"id":"79a090ed7a37d829",
-			"type":"text",
-			"text":"",
-			"styleAttributes":{},
-			"x":382,
-			"y":-528,
-			"width":381,
-			"height":140
-		},
-		{
 			"id":"37d9f4911c7d3c6b",
 			"type":"text",
 			"text":"CPU reaches into RAM, grabs a piece of data from a specific address, brings it into its own tiny internal workspace (registers/cache) to do a calculation, and sends the result back to RAM.",
@@ -112,6 +84,47 @@
 			"y":-329,
 			"width":406,
 			"height":118
+		},
+		{
+			"id":"43be9f043c643f28",
+			"type":"text",
+			"text":"Registers",
+			"styleAttributes":{},
+			"x":162,
+			"y":-737,
+			"width":116,
+			"height":60,
+			"color":"6"
+		},
+		{
+			"id":"086bb0430c6028b1",
+			"type":"text",
+			"text":"Hold:\n- data\n- instructions\n- memory addresses\nthat the computer is actively using / processing NOW",
+			"styleAttributes":{},
+			"x":382,
+			"y":-974,
+			"width":475,
+			"height":174
+		},
+		{
+			"id":"898e029bb33f0fca",
+			"type":"text",
+			"text":"Small, built-in, ultra-fast storage locations",
+			"styleAttributes":{},
+			"x":382,
+			"y":-1080,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"0d0b91d6cdedeccc",
+			"type":"text",
+			"text":"This is what we're managing.",
+			"styleAttributes":{},
+			"x":3200,
+			"y":-640,
+			"width":264,
+			"height":60
 		}
 	],
 	"edges":[
@@ -201,21 +214,30 @@
 			"toSide":"left"
 		},
 		{
-			"id":"375ab8ddd20ab60e",
-			"styleAttributes":{"pathfindingMethod":"square"},
-			"toFloating":false,
-			"fromNode":"b0e6b60d14766d34",
-			"fromSide":"right",
-			"toNode":"79a090ed7a37d829",
-			"toSide":"left"
-		},
-		{
 			"id":"07fc3747c84af60f",
 			"styleAttributes":{"pathfindingMethod":"square"},
 			"toFloating":false,
 			"fromNode":"37d9f4911c7d3c6b",
 			"fromSide":"top",
 			"toNode":"b0e6b60d14766d34",
+			"toSide":"left"
+		},
+		{
+			"id":"2bc95f0973f62cfe",
+			"styleAttributes":{"pathfindingMethod":"square"},
+			"toFloating":false,
+			"fromNode":"43be9f043c643f28",
+			"fromSide":"right",
+			"toNode":"898e029bb33f0fca",
+			"toSide":"left"
+		},
+		{
+			"id":"7732cb804df7086f",
+			"styleAttributes":{"pathfindingMethod":"square"},
+			"toFloating":false,
+			"fromNode":"28252d51a4970bfd",
+			"fromSide":"right",
+			"toNode":"0d0b91d6cdedeccc",
 			"toSide":"left"
 		}
 	],
