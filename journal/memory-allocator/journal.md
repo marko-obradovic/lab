@@ -37,7 +37,9 @@ Questions:
 2. Then I'll try to focus on just understanding what automation looks like for this. What functions can I break memory allocation down to, an how can I apply it?
 
 Currently, I'm just looking at how memory actually works. Might be going a bit too deep with it, but I'm trying to get a general sense of how RAM and the CPU work together. I'm doing this so that I have a basic idea of what's happening in the background when I'm allocating and de-allocating memory - it might make it easier to learn the features of memory allocation in C as well.
- 
+
+**2026-11-21**
+I've been trying to understand how the CPU and Memory interact, but kept zooming into the CPU, I think it's more important to start at memory, and how RAM works - GPT suggested to look into **virtual memory, physical memory, memory addresses and page tables**. That seems to be clearing up a lot - I'm going to be looking into these things, but I'm still lost as to what the RAM's role is outside of just "you load programs into it, and your computer uses them". I really want to work towards a bigger picture here - I don't need to understand the full contents of how all components work and the physics behind them (yet), but I do need a mental model that can serve as a reference point I can constantly refer to when looking through a problem. The same way that, once I understood signal flow on an SSL desk at ICMP, I could fix any problems I was having with the hardware - I didn't know how the components worked, but I knew where things flowed to at a high level, and what to expect as inputs / outputs at least.
 
 
 
