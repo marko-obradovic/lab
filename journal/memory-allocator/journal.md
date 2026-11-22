@@ -41,8 +41,6 @@ Currently, I'm just looking at how memory actually works. Might be going a bit t
 **2026-11-21**
 I've been trying to understand how the CPU and Memory interact, but kept zooming into the CPU, I think it's more important to start at memory, and how RAM works - GPT suggested to look into **virtual memory, physical memory, memory addresses and page tables**. That seems to be clearing up a lot - I'm going to be looking into these things, but I'm still lost as to what the RAM's role is outside of just "you load programs into it, and your computer uses them". I really want to work towards a bigger picture here - I don't need to understand the full contents of how all components work and the physics behind them (yet), but I do need a mental model that can serve as a reference point I can constantly refer to when looking through a problem. The same way that, once I understood signal flow on an SSL desk at ICMP, I could fix any problems I was having with the hardware - I didn't know how the components worked, but I knew where things flowed to at a high level, and what to expect as inputs / outputs at least.
 
-
-
 ### 05 — Testing and Evaluation
 - Unit tests
 - Edge cases

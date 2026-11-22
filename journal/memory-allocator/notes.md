@@ -22,14 +22,14 @@ me (2026-11-21T06:27:01.536Z): is h is built in?
 -->
 
 
+# Problems with physical memory allocation
 
 
-# Problems with manual memory allocation
 Reference: [Virtual Memory Explained (including Paging)](https://www.youtube.com/watch?v=fGP6VHxqkIM)
 
 Let's say you have a computer where all memory access is done using the actual physical address in memory (in the RAM)
 
-Direct memory access creates several problems, outlined in [[manual-memory-management-issues]]
+Direct memory access creates several problems, outlined in [[issues-with-directly-accessing-memory]]
 
 
 # Creating a Library in C
