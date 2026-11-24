@@ -10,6 +10,8 @@ First I need to figure out what I need to do for this project.
 	2. Make sure everything is efficient, and to standards (do AI code reviews)
 # Memory Theory
 
+> Apparently this book is excellent, and free: [Operating Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/)
+
 ## Memory and CPU Interactions
 The CPU needs instructions to execute. It gets these instructions from the RAM - from what I understand it reaches out into the <!--c:a9kxa-->instructions cache<!--/c:a9kxa--><!--co:a9kxa by:me at:2026-11-20T21:17:41.778Z status:open quote:"instructions cache"
 me (2026-11-20T21:17:41.778Z): Where is this? is it a component of the RAM? Or does this mean that L1, L2 or L3 cache in the CPU is dedicated towards instructions cache storage? Or something else?
@@ -22,14 +24,12 @@ me (2026-11-21T06:27:01.536Z): is h is built in?
 -->
 
 
-# Problems with physical memory allocation
 
+Direct memory access creates several problems, outlined in [[issues-with-directly-accessing-memory]]
 
-Reference: [Virtual Memory Explained (including Paging)](https://www.youtube.com/watch?v=fGP6VHxqkIM)
 
 Let's say you have a computer where all memory access is done using the actual physical address in memory (in the RAM)
 
-Direct memory access creates several problems, outlined in [[issues-with-directly-accessing-memory]]
 
 
 # Creating a Library in C

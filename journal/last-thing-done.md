@@ -1,1 +1,1 @@
-writing about physical memory management problems, watching https://www.youtube.com/watch?v=fGP6VHxqkIM at 7:20 - finish the bit in [[issues-with-directly-accessing-memory]] where it says "Another advantage of paging...."
+Just started https://www.youtube.com/watch?v=B6tJxvYBNrU, writing in [[how-virtual-memory-works]]
