@@ -1,1 +1,2 @@
 - [How a CPU Turns 1s and 0s Into Everything You See](https://www.youtube.com/watch?v=je0BsLY5nZw)
+- [OSDev WIki](https://wiki.osdev.org/Expanded_Main_Page)

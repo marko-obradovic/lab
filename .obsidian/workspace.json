@@ -194,11 +194,11 @@
   },
   "active": "b391e489c3ebe53a",
   "lastOpenFiles": [
-    "journal/memory-allocator/journal.md",
     "journal/resources.md",
+    "journal/memory-allocator/how-virtual-memory-works.md",
+    "journal/memory-allocator/journal.md",
     "journal/last-thing-done.md",
     "journal/memory-allocator/virtual-memory-overview.md",
-    "journal/memory-allocator/how-virtual-memory-works.md",
     "journal/memory-allocator/solution-to-physical-memory-access.md",
     "journal/memory-allocator/issues-with-directly-accessing-memory.md",
     "journal/memory-allocator/notes.md",
