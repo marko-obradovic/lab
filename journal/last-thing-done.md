@@ -1,1 +1,1 @@
-Just started https://www.youtube.com/watch?v=B6tJxvYBNrU, 1:28ish writing in [[how-virtual-memory-works]]
+https://www.youtube.com/watch?v=B6tJxvYBNrU 4:36ish writing in [[how-virtual-memory-works]]
