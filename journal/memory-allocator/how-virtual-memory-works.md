@@ -2,7 +2,7 @@ Reference: [Page Tables and MMU: How Virtual Memory Actually Works Behind the Sc
 
 Pages in virtual memory are mapped to frames in physical memory using a special data structure that holds information for each page - a **Page Table**
 
-Every Page Table entry includes the physical address of that address in RAM, and [FINISH THIS] some additional data
+Every Page Table entry includes the physical address of that address in RAM, and some additional data outlined in [[page-content]]
 
 The number of entries in a single Page table can be huge. For example, per application, the OS could allocate:
 - Virtual memory space up a capacity of 16 GB
@@ -44,29 +44,20 @@ For simplicity, let's assume:
 - Each page table is stored as an array at a fixed location in main memory (not always true for modern systems)
 
 Whenever a process is given control of the processor (called a context switch), the active page table must be updated via a **pointer** called the **page table base register**, which is one of the CPU's protected registers.
-> [!question] As in, you can only have one page table active at a time, and which page table is being used must be updated?
+
+**Remember:**
+- **Page table:** The actual data structure containing the virtual-page-to-physical-frame mappings.
+- **Base address:** The physical RAM address where that data structure begins.
+- **PTBR:** A CPU register that holds that base address, not the page table itself.
+
+You can only have one page table active at a time.
 
 In this model, changing the active page table is as simple as updating this register to reference the current process' page table.
-> [!question] How does it actually work in real life?
 
-Each entry in the page table includes several fields:
-- Physical frame number - the result of translating a virtual page number
-> [!question] As in it will show what physical frame number this virtual page is mapped to?
-- Protection (permission bits)
-	- Read-only Bit (determines whether this page can be modified or not)
-		- Protects pages from being overwritten - either by accident or maliciously
-	- User / Supervisor Bit (determines the privilege level required to access the page)
-		- The page marked as user mode is accessible to user level or privileged code, but only if it's mapped in the process' page table. 
-		- A page marked as supervisor mode can only be accessed by privileged code, which is typically the OS. This helps prevent user level processes (normal every-day apps) from interfering with, or reading sensitive OS data.
-	- No Execute Bit (controls whether code from this page can be executed or not)
-		- This is a security feature used to mitigate certain types of attacks.
-- Status bits (mainly used by dedicated hardware called the memory management unit (MMU))
-	- Present / Valid bit (indicates whether the page table entry contains a valid physical frame number)
-		- if the entry is invalid, it can't be used for translation
-	- Dirty / modified bit (indicates whether the page has been modified since it was loaded into memory)
-		- Important for knowing if a page needs to be written from main memory back to disk in the future
-	- Accessed bit (indicates whether the page has been read or written to recently)
-		- Helps the MMU track page usage for future caching and page replacement decisions at the hardware level
-	- The global bit (set by the OS - indicates that the page is shared across all processes)
-		- This flag is often used for the OS' Kernel pages.
-> [!question] What does this look like in practice? How is it implemented at a high level? And how are all three of these sub-points broken down into this field, how is it parsed? What does it look like? Can it only be one bit at a time, or can you have multiple bits and it figures out what properties they have after?
+Problem is, if the processor has to access RAM just to translate the virtual address to the physical address, that means for every memory read/write request, two memory accesses are needed. So in this model:
+1. The application gains access of the CPU (is executing on the CPU)
+2. The PTBR points to the base address of the top-level page table (particularly important when we get to multi-level page tables)
+3. The CPU would use that base address to accesses the page table in RAM to find the physical frame corresponding to the virtual page.
+4. The CPU combines the physical frame address with the page offset
+> [!question] what does this mean
+5. The CPU accesses the physical frame in the RAM again to retrieve or modify the actual data.
