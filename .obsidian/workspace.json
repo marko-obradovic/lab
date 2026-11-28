@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "journal/memory-allocator/how-virtual-memory-works.md",
+                "file": "journal/last-thing-done.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "how-virtual-memory-works"
+              "title": "last-thing-done"
             }
           }
         ]
@@ -194,14 +194,15 @@
   },
   "active": "b391e489c3ebe53a",
   "lastOpenFiles": [
-    "page-content.md",
-    "journal/memory-allocator/how-virtual-memory-works.md",
+    "journal/memory-allocator/journal.md",
     "journal/last-thing-done.md",
     "journal/memory-allocator/virtual-memory-overview.md",
-    "journal/memory-allocator/building-the-allocator.md",
-    "journal/memory-allocator/journal.md",
-    "journal/resources.md",
+    "journal/memory-allocator/how-virtual-memory-works.md",
     "journal/memory-allocator/solution-to-physical-memory-access.md",
+    "journal/resources.md",
+    "README.md",
+    "page-content.md",
+    "journal/memory-allocator/building-the-allocator.md",
     "journal/memory-allocator/issues-with-directly-accessing-memory.md",
     "journal/memory-allocator/notes.md",
     "journal/memory-allocator/issues-with-directly-accessing-memory.md~",

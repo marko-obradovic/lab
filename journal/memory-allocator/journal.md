@@ -47,7 +47,6 @@ I understand the high level overview of the problems that we've had with physica
 **2026-11-26**
 Just needed to refine a few things on Virtual Memory - check git history to see how that's evolved, but I'm confident in explaining what virtual memory is, why it's used, and how pages work (high level) - I was really confused about whether each application had a fixed amount of pages, or if it grows / shrinks dynamically, and whether it was based on RAM size or not - but it's dynamic. It's not based on RAM size - the amount of pages will grow, and if the app gets an extra page that can't map to any more RAM, it'll just swap some other page out that hasn't been used to use hard drive or SSD storage, and the new page can start to use RAM.
 
-
 ### 05 — Testing and Evaluation
 - Unit tests
 - Edge cases
